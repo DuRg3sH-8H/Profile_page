@@ -10,8 +10,7 @@ const Icons = ({ name }: IconsProps) => {
     case 'globe':
       return <Entypo name="globe" size={30} color="gold" />;
       default:
-        // Handle the case when 'name' doesn't match any known icon
-        return null; // You can return null or any other fallback content
+        return null;
     }
   };
   
