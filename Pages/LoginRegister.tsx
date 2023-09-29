@@ -1,11 +1,9 @@
 import React from "react";
 import { View,Text,StatusBar,StyleSheet, SafeAreaView } from "react-native";
 import Icons from "../components/Icons";
-
-
-
 const LoginRegister = () => {
     return(
+
         <SafeAreaView style={styles.all}>
             <View>
                 <StatusBar backgroundColor="#690c23" barStyle="light-content" />
@@ -31,7 +29,7 @@ const LoginRegister = () => {
                     <View style={styles.card2}>
                         <View style={styles.services}>
                             <Icons name="globe"/>
-                            <Text style={[styles.text,styles.servicename]}>Language</Text>
+                            <Text style={[styles.text,styles.servicename]}> Language</Text>
                         </View>
                         <View style={styles.services}>
                             <Icons name="human-male"/>
@@ -74,7 +72,7 @@ const styles = StyleSheet.create({
       padding: 20,
     },
     headerText: {
-      fontSize: 40,
+      fontSize: 32,
       fontWeight: 'bold',
     },
     content: {

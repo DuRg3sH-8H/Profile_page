@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
   headerText: {
     fontSize: 24,
     fontWeight: 'bold',
+    color:'#000000'
   },
   content: {
     flex: 1,
