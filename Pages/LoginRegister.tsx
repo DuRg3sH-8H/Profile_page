@@ -31,21 +31,21 @@ const LoginRegister = () => {
                     <View style={styles.card2}>
                         <View style={styles.services}>
                             <Icons name="globe"/>
-                            <Text style={styles.text}>Language</Text>
+                            <Text style={[styles.text,styles.servicename]}>Language</Text>
                         </View>
-                        <View>
-                            <Text style={styles.text}>Our Member</Text>
+                        <View style={styles.services}>
+                            <Text style={[styles.text,styles.servicename]}>Our Member</Text>
                         </View>
-                        <View>
+                        <View style={styles.services}>
                             <Text style={styles.text}>Contact</Text>
                         </View>
-                        <View>
+                        <View style={styles.services}>
                             <Text style={styles.text}>About Us</Text>
                         </View>
-                        <View>
+                        <View style={styles.services}>
                             <Text style={styles.text}>Downloads</Text>
                         </View>
-                        <View>
+                        <View style={styles.services}>
                             <Text style={styles.text}>Gallery</Text>
                         </View>
                     </View>
@@ -76,8 +76,14 @@ const styles = StyleSheet.create({
     },
     card1:{
         backgroundColor: '#690c23',
-        borderRadius:8,
-        alignItems:"center"
+        borderRadius: 10,
+        padding: 16,
+        shadowColor: 'black',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
+        elevation: 4,
+        alignItems:'center'
     },
     club:{
         fontSize:24,
@@ -117,7 +123,10 @@ const styles = StyleSheet.create({
     marginTop:10
     },
     services:{
-
-    }
+        flexDirection:'row'
+    },
+    servicename:{
+        paddingLeft:4
+    },
   });
 export default LoginRegister;
