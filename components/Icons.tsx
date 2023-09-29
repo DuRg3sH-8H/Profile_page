@@ -21,10 +21,10 @@ const Icons = ({ name }: IconsProps) => {
       return <Foundation name="telephone" size={26} color="#690c23" />;
 
       case('file-download'):
-      return <FontAwesome5 name="file-download" size={26} color="#690c23" />;
+      return <FontAwesome5 name="file-download" size={24} color="#690c23" />;
 
       case('exclamationcircle'):
-      return <AntDesign name="exclamationcircle" size={26} color="#690c23" />;
+      return <AntDesign name="exclamationcircle" size={24} color="#690c23" />;
 
       case 'images':
       return <Entypo name="images" size={24} color="#690c23" />;

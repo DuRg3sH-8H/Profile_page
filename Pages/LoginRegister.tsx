@@ -52,7 +52,7 @@ const LoginRegister = () => {
                         
                         <View style={styles.services}>
                             <Icons name="images"/>
-                            <Text style={[styles.text,styles.servicename]}>Gallery</Text>
+                            <Text style={[styles.text,styles.servicename]}> Gallery</Text>
                         </View>
                     </View>
                 </View>
@@ -130,7 +130,8 @@ const styles = StyleSheet.create({
     },
     services:{
         flexDirection:'row',
-        alignItems:"center"
+        alignItems:"center",
+        
     },
     servicename:{
         flex:1,
