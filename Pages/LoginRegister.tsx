@@ -34,19 +34,25 @@ const LoginRegister = () => {
                             <Text style={[styles.text,styles.servicename]}>Language</Text>
                         </View>
                         <View style={styles.services}>
+                            <Icons name="human-male"/>
                             <Text style={[styles.text,styles.servicename]}>Our Member</Text>
                         </View>
                         <View style={styles.services}>
-                            <Text style={styles.text}>Contact</Text>
+                            <Icons name="telephone"/>
+                            <Text style={[styles.text,styles.servicename]}>  Contact</Text>
                         </View>
                         <View style={styles.services}>
-                            <Text style={styles.text}>About Us</Text>
+                            <Icons name="file-download"/>
+                            <Text style={[styles.text,styles.servicename]}>  Downloads</Text>
                         </View>
                         <View style={styles.services}>
-                            <Text style={styles.text}>Downloads</Text>
+                            <Icons name="exclamationcircle"/>
+                            <Text style={[styles.text,styles.servicename]}> About Us</Text>
                         </View>
+                        
                         <View style={styles.services}>
-                            <Text style={styles.text}>Gallery</Text>
+                            <Icons name="images"/>
+                            <Text style={[styles.text,styles.servicename]}>Gallery</Text>
                         </View>
                     </View>
                 </View>
@@ -58,7 +64,7 @@ const LoginRegister = () => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#FFE4E1', 
+      backgroundColor: '#EEEEEE', 
       padding:16,
       borderRadius:16,
       height:780
@@ -123,10 +129,16 @@ const styles = StyleSheet.create({
     marginTop:10
     },
     services:{
-        flexDirection:'row'
+        flexDirection:'row',
+        alignItems:"center"
     },
     servicename:{
-        paddingLeft:4
+        flex:1,
+        padding:6,
+        fontSize:16,
+        justifyContent:'center',
+
+
     },
   });
 export default LoginRegister;
