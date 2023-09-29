@@ -1,5 +1,5 @@
 import React from 'react';
-import Entypo from 'react-native-vector-icons/Entypo'; // Import FontAwesome icons
+import Entypo from 'react-native-vector-icons/Entypo'; 
 
 type IconsProps = {
   name: string;
