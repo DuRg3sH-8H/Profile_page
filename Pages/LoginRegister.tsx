@@ -117,14 +117,14 @@ const styles = StyleSheet.create({
     },
     card2:{
         backgroundColor: 'white',
-    borderRadius: 10,
-    padding: 20,
-    shadowColor: 'black',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 4, // Android elevation
-    marginTop:10
+        borderRadius: 10,
+        padding: 20,
+        shadowColor: 'black',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 4,
+        elevation: 4, // Android elevation
+        marginTop:10
     },
     services:{
         flexDirection:'row',
