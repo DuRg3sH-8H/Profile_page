@@ -5,6 +5,7 @@ import Foundation from 'react-native-vector-icons/Foundation'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import FontAwesome from 'react-native-vector-icons/FontAwesome'
 
 type IconsProps = {
   name: string;
@@ -35,6 +36,15 @@ const Icons = ({ name }: IconsProps) => {
 
       case('chatbox'):
       return <Ionicons name="chatbox" size={26} color="#690c23" />;
+
+      case('caret-back-circle'):
+      return <Ionicons name="caret-back-circle" size={38} color="#FFFFFF" />;
+
+      case('file-pdf-o'):
+      return <FontAwesome name="file-pdf-o" size={44} color="#690c23" />;
+
+      case('file-download2'):
+      return <FontAwesome5 name="file-download" size={40} color="#690c23" />;
 
     default:
       return null;
